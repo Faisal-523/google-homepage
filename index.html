@@ -2,9 +2,63 @@
 <style>
     body{
         background-color:white;
+        width:auto;
+        height:auto;
     }
     .main-img{
-        
+        display:block;
+        position: fixed;
+        top:30%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    #searchbar{
+        position:fixed;
+        top:40%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width: 40%;
+        height: 6%;
+        padding: 12px 20px;
+        margin: 20px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+    #s1{
+        position:fixed;
+        background-color: rgb(245, 245, 245);
+        color:#5F6368;
+        top:50%;
+        left:50%;
+        transform: translate(-130%,-50%);
+        display: inline-block;
+        min-width:54px;
+        height:36px;
+        border-radius: 4px;
+        border:1px solid #f2f2f2;
+        font-size:14px;
+        margin:20px 0;
+    }
+
+    #s2{
+        position:fixed;
+        background-color: rgb(245, 245, 245);
+        color:#5F6368;
+        top:50%;
+        left:50%;
+        transform: translate(-10%,-50%);
+        display: inline-block;
+        min-width:54px;
+        height:36px;
+        border-radius: 4px;
+        border:1px solid #f2f2f2;
+        font-size:14px;
+        margin:20px 0;
+    }
+    .main-footer{
+        background-color: grey;
     }
 </style>
 
@@ -13,15 +67,31 @@
         <title>Google</title>
     </head>
 <body>
+    <div class = "main-header">
+        <a href=" ">Gmail</a>
+        <a href=" ">Images</a>
+        <input id="signin-button" type="button" value="Sign in">
+    </div>
     <div class = "main-img">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
     </div>
     <div class = "main-form">
         <form>
-            <input type="text">
-            <input type="button" value="Google Search">
-            <input type="button" value="I'm Feeling Lucky">
+            <input id="searchbar" type="text">
+            <input id="s1" type="button" value="Google Search">
+            <input id="s2" type="button" value="I'm Feeling Lucky">
         </form>
+    </div>
+    <div class="main-footer">
+        <p>India</p>
+        <hr>
+        <a href=" ">Advertising</a>
+        <a href=" ">Business</a>
+        <a href=" ">About</a>
+        <a href=" ">How Search works</a>
+        <a href=" ">Privacy</a>
+        <a href=" ">Terms</a>
+        <a href=" ">Settings</a>
     </div>
 </body>
 </html>
